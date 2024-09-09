@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Hello, World!',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello World!'),
+          title: Text('Hello, World!'),
         ),
         body: Center(
-          child: Text('Hello World!\nI\'m Humphrey'),
+          child: Text('Hello, World!\n I`m Humphrey Nyahoja', style: TextStyle(fontSize: 24)),
         ),
       ),
     );
